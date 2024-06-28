@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+section.home .orta .center .estate-card .estate-header .estate-tags .tags ul li a, section.home .orta .center .estate-card .estate-header .estate-tags .featured span, section.home .orta .yuxari ul li, section.home, section.pink .orta .filter-form .input-box:last-child, section.pink .orta, section.pink, header .orta .cta ul li, header .orta .navbar ul li, header .orta .navbar, header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  padding: 15px 0;
+}
+header .orta {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+header .orta .logo {
+  width: 260px;
+}
+header .orta .logo img {
+  width: 185px;
+  margin: 20px 0;
+}
+header .orta .navbar {
+  width: 50%;
+}
+header .orta .navbar ul {
+  display: flex;
+  gap: 10px;
+}
+header .orta .navbar ul li:first-child a {
+  color: #bc8664;
+}
+header .orta .navbar ul li a {
+  color: black;
+  font-size: 17px;
+}
+header .orta .cta {
+  width: 22%;
+}
+header .orta .cta ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+header .orta .cta ul li a {
+  font-size: 17px;
+  color: black;
+}
+header .orta .cta ul li a i {
+  color: #bc8664;
+}
+header .orta .cta ul li a i .span {
+  color: black;
+}
+
+section.pink {
+  width: 100%;
+  background-color: #f1eaeb;
+}
+section.pink .orta {
+  width: 100%;
+  padding: 59px;
+}
+section.pink .orta .filter-form {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+section.pink .orta .filter-form .input-box {
+  background-color: white;
+  position: relative;
+  margin-left: 10px;
+}
+section.pink .orta .filter-form .input-box:last-child {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #bc8664;
+  margin-right: 10px;
+}
+section.pink .orta .filter-form .input-box input:checked ~ .property-type-list {
+  opacity: 1;
+  visibility: visible;
+}
+section.pink .orta .filter-form .input-box label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.pink .orta .filter-form .input-box .property-type-list {
+  width: 100px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+}
+section.pink .orta .filter-form .input-box .property-type-list li {
+  transition-duration: 0.5s;
+}
+section.pink .orta .filter-form .input-box .property-type-list li:hover {
+  background-color: rgb(220, 220, 220);
+}
+section.pink .orta .filter-form .input-box input:checked ~ .sell-or-rent-list {
+  opacity: 1;
+  visibility: visible;
+}
+section.pink .orta .filter-form .input-box label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.pink .orta .filter-form .input-box .sell-or-rent-list {
+  width: 100px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+}
+section.pink .orta .filter-form .input-box .sell-or-rent-list li {
+  transition-duration: 0.5s;
+}
+section.pink .orta .filter-form .input-box .sell-or-rent-list li:hover {
+  background-color: rgb(220, 220, 220);
+}
+section.pink .orta .filter-form .input-box input:checked ~ .property-status {
+  opacity: 1;
+  visibility: visible;
+}
+section.pink .orta .filter-form .input-box label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.pink .orta .filter-form .input-box .property-status {
+  width: 100px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background-color: white;
+}
+section.pink .orta .filter-form .input-box .property-status li {
+  transition-duration: 0.5s;
+}
+section.pink .orta .filter-form .input-box .property-status li:hover {
+  background-color: rgb(220, 220, 220);
+}
+section.pink .orta .filter-form .input-box {
+  background-color: white;
+  position: relative;
+}
+section.pink .orta .filter-form .input-box i {
+  color: white;
+}
+
+section.home {
+  width: 100%;
+}
+section.home .orta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+section.home .orta .yuxari {
+  width: 60%;
+  padding: 25px;
+  display: flex;
+}
+section.home .orta .yuxari ul {
+  gap: 41px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+section.home .orta .yuxari ul li a {
+  font-size: 17px;
+  color: black;
+}
+section.home .orta .yuxari ul li a span {
+  display: flex;
+  margin-top: 15px;
+}
+section.home .orta .center {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.home .orta .center .estate-card {
+  width: 50%;
+  margin-top: 30px;
+}
+section.home .orta .center .estate-card .estate-header {
+  width: 90%;
+  position: relative;
+}
+section.home .orta .center .estate-card .estate-header .estate-tags {
+  width: 70%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+section.home .orta .center .estate-card .estate-header .estate-tags .featured {
+  width: 19%;
+  margin-left: 5px;
+}
+section.home .orta .center .estate-card .estate-header .estate-tags .featured span {
+  border: 1px solid rgba(109, 189, 146, 0.8509803922);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(109, 189, 146, 0.8509803922);
+  color: white;
+  font-size: 12px;
+}
+section.home .orta .center .estate-card .estate-header .estate-tags .tags {
+  width: 40%;
+  display: flex;
+  gap: 10px;
+}
+section.home .orta .center .estate-card .estate-header .estate-tags .tags ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+section.home .orta .center .estate-card .estate-header .estate-tags .tags ul li {
+  width: 45%;
+  border: 1px solid #bc8664;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: #bc8664;
+  display: flex;
+}
+section.home .orta .center .estate-card .estate-header .estate-tags .tags ul li a {
+  color: white;
+  font-size: 12px;
+  margin-left: 15px;
+}
+section.home .orta .center .estate-card .estate-header .estate-image {
+  width: 100%;
+}
+section.home .orta .center .estate-card .estate-header .estate-image img {
+  width: 435px;
+  border-radius: 21px;
+}
+section.home .orta .center .estate-card .estate-header .estate-owner {
+  width: 100%;
+}
+section.home .orta .center .estate-card .estate-header .estate-owner img {
+  width: 48px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+section.home .orta .center .estate-card .estate-header .estate-wishlist {
+  width: 100%;
+}
+section.home .orta .center .estate-card .estate-header .estate-wishlist i {
+  margin-left: 404px;
+}
+section.home .orta .center .estate-card .estate-body {
+  width: 100%;
+}
+section.home .orta .center .estate-card .estate-body .estate-title {
+  width: 60%;
+}
+section.home .orta .center .estate-card .estate-body .estate-title a {
+  color: black;
+  font-size: 21px;
+  font-weight: 400;
+}
+section.home .orta .center .estate-card .estate-body .estate-title a:hover {
+  color: #bc8664;
+}
+section.home .orta .center .estate-card .estate-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.home .orta .center .estate-card .estate-description ul {
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+  margin-top: 5px;
+}
+section.home .orta .center .estate-card .estate-description ul li {
+  color: grey;
+}
+section.home .orta .center .estate-card .estate-price {
+  width: 100%;
+  margin-top: 10px;
+}
+section.home .orta .center .estate-card .estate-price span {
+  color: #bc8664;
+}/*# sourceMappingURL=style.css.map */

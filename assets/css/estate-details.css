@@ -1,0 +1,3248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+section.details .orta .right-sidebar .box .tag .sag, section.details .orta .right-sidebar .box .tag .sol, section.details .orta .right-sidebar .box .center, section.details .orta .right-sidebar .box .top, section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .featured span, section.details .orta .all-about .person .orta .asagi .bes ul li, section.details .orta .all-about .person .orta .asagi .bir span, section.details .orta .all-about .person .orta .yuxari .sol .box, section.details .orta .all-about .schedule .orta .asagi .sag .iki .sag, section.details .orta .all-about .schedule .orta .asagi .sag .iki .sol, section.details .orta .all-about .plans .orta .center img, section.details .orta .all-about .adress .orta .asagi .sol .bottom span, section.details, section.images .orta, section.tags .orta .yuxari a, section.tags, section.words .orta ul li, section.words .orta ul, header .orta .cta ul li, header .orta .navbar ul li, header .orta .navbar, header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  padding: 15px 0;
+}
+header .orta {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+header .orta .logo {
+  width: 260px;
+}
+header .orta .logo img {
+  width: 185px;
+  margin: 20px 0;
+}
+header .orta .logoi {
+  display: none;
+}
+header .orta .logoi img {
+  display: none;
+}
+header .orta .navbar {
+  width: 90%;
+}
+header .orta .navbar ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+header .orta .navbar ul li {
+  border: 1px solid transparent;
+  padding: 10px;
+}
+header .orta .navbar ul li:first-child a {
+  color: #bc8664;
+}
+header .orta .navbar ul li:hover {
+  border: 1px solid #bc8664;
+  background-color: #bc8664;
+  border-radius: 50px;
+}
+header .orta .navbar ul li:hover a {
+  color: white !important;
+}
+header .orta .navbar ul li a {
+  color: black;
+  font-size: 17px;
+}
+header .orta .cta {
+  width: 22%;
+}
+header .orta .cta ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+header .orta .cta ul li a {
+  font-size: 17px;
+  color: black;
+}
+header .orta .cta ul li a i {
+  color: #bc8664;
+}
+header .orta .cta ul li a i .span {
+  color: black;
+}
+header .orta .none {
+  width: 100%;
+  display: none;
+}
+header .orta .none i {
+  display: none;
+}
+
+section.words {
+  width: 100%;
+  margin-top: 10px;
+}
+section.words .orta {
+  width: 47%;
+}
+section.words .orta ul li a {
+  color: gray;
+  font-size: 14px;
+}
+section.words .orta ul span {
+  font-size: 15px;
+}
+
+section.tags {
+  width: 100%;
+}
+section.tags .orta {
+  width: 100%;
+  margin-left: 19px;
+}
+section.tags .orta .bottom {
+  display: none;
+}
+section.tags .orta .bottom i {
+  display: none;
+}
+section.tags .orta .bottom span {
+  display: none;
+}
+section.tags .orta .yuxari {
+  width: 50%;
+  display: flex;
+  gap: 13px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+section.tags .orta .yuxari a {
+  width: 13%;
+  font-size: 15px;
+  padding: 1px;
+  border: 1px solid #bc8664;
+  border-radius: 50px;
+  background-color: #bc8664;
+  color: white;
+}
+section.tags .asagi {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+section.tags .asagi .sol {
+  width: 60%;
+}
+section.tags .asagi .sol .title {
+  width: 70%;
+  margin-left: 20px;
+}
+section.tags .asagi .sol .title h2 {
+  font-size: 35px;
+}
+section.tags .asagi .sol .top {
+  width: 100%;
+  display: none;
+}
+section.tags .asagi .sol .top span {
+  color: #bc8664;
+  font-size: 32px;
+  display: none;
+}
+section.tags .asagi .sol .subtitle {
+  width: 70%;
+  margin-left: 20px;
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+}
+section.tags .asagi .sol .subtitle i {
+  font-size: 17px;
+  color: gray;
+}
+section.tags .asagi .sol .subtitle p {
+  font-size: 16px;
+  color: gray;
+}
+section.tags .asagi .sag {
+  width: 40%;
+}
+section.tags .asagi .sag .top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+section.tags .asagi .sag .top span {
+  color: #bc8664;
+  font-size: 32px;
+}
+section.tags .asagi .sag .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+section.tags .asagi .sag .bottom i {
+  font-size: 10px;
+}
+section.tags .asagi .sag .bottom span {
+  font-size: 10px;
+}
+
+section.images {
+  width: 100%;
+  margin-top: 20px;
+}
+section.images .orta {
+  width: 100%;
+  margin-left: -27px;
+  gap: 5px;
+}
+section.images .orta .sol {
+  width: 30%;
+  overflow: hidden;
+}
+section.images .orta .sol img {
+  width: 677px;
+}
+section.images .orta .center {
+  width: 30%;
+  overflow: hidden;
+}
+section.images .orta .center img {
+  width: 732px;
+}
+section.images .orta .sag {
+  width: 30%;
+  overflow: hidden;
+}
+section.images .orta .sag img {
+  width: 732px;
+}
+
+section.overview {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  background-color: #f9f5f5;
+}
+section.overview .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+}
+section.overview .orta .yuxari {
+  width: 100%;
+}
+section.overview .orta .yuxari a {
+  width: 70%;
+  font-size: 20px;
+  color: black;
+  margin-left: 30px;
+}
+section.overview .orta .asagi {
+  width: 100%;
+  margin-top: 35px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.overview .orta .asagi ul {
+  gap: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.overview .orta .asagi ul li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+section.overview .orta .asagi ul li i {
+  font-size: 17px;
+  color: black;
+  margin-bottom: 10px;
+}
+section.overview .orta .asagi ul li a {
+  color: black;
+}
+
+section.details {
+  width: 100%;
+  background-color: #f9f5f5;
+  margin-top: 30px;
+}
+section.details .orta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section.details .orta .all-about {
+  width: 70%;
+}
+section.details .orta .all-about .description {
+  width: 100%;
+}
+section.details .orta .all-about .description .center {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+}
+section.details .orta .all-about .description .center .title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.details .orta .all-about .description .center .title h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+section.details .orta .all-about .description .center .subtitle {
+  width: 100%;
+}
+section.details .orta .all-about .description .center .subtitle p {
+  font-size: 14px;
+  color: gray;
+  line-height: 23px;
+}
+section.details .orta .all-about .adress {
+  width: 100%;
+}
+section.details .orta .all-about .adress .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .adress .orta .yuxari {
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+section.details .orta .all-about .adress .orta .yuxari a {
+  font-size: 19px;
+  font-weight: 400;
+  color: black;
+}
+section.details .orta .all-about .adress .orta .yuxari a:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .adress .orta .asagi {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .adress .orta .asagi .sol {
+  width: 50%;
+}
+section.details .orta .all-about .adress .orta .asagi .sol .top {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .adress .orta .asagi .sol .top ul {
+  line-height: 29px;
+}
+section.details .orta .all-about .adress .orta .asagi .sol .top ul li {
+  width: 100%;
+}
+section.details .orta .all-about .adress .orta .asagi .sol .top ul li .span {
+  color: black;
+  font-size: 10px;
+}
+section.details .orta .all-about .adress .orta .asagi .sol .top ul li a {
+  color: grey;
+  font-size: 13px;
+}
+section.details .orta .all-about .adress .orta .asagi .sol .bottom {
+  width: 33%;
+  border: 1px solid rgba(109, 189, 146, 0.8509803922);
+  border-radius: 20px;
+  padding: 3px;
+  background-color: rgba(109, 189, 146, 0.8509803922);
+  margin: 25px 0px;
+}
+section.details .orta .all-about .adress .orta .asagi .sol .bottom:hover {
+  background-color: #69c17d;
+}
+section.details .orta .all-about .adress .orta .asagi .sol .bottom span {
+  color: white;
+  font-size: 13px;
+}
+section.details .orta .all-about .adress .orta .asagi .sag {
+  width: 50%;
+}
+section.details .orta .all-about .adress .orta .asagi .sag ul {
+  line-height: 29px;
+}
+section.details .orta .all-about .adress .orta .asagi .sag ul li {
+  width: 100%;
+}
+section.details .orta .all-about .adress .orta .asagi .sag ul li .span {
+  color: black;
+  font-size: 10px;
+}
+section.details .orta .all-about .adress .orta .asagi .sag ul li a {
+  color: grey;
+  font-size: 13px;
+}
+section.details .orta .all-about .adress .orta .asagi .sag .bottom {
+  display: none;
+}
+section.details .orta .all-about .adress .orta .asagi .sag .bottom span {
+  display: none;
+}
+section.details .orta .all-about .details {
+  width: 100%;
+}
+section.details .orta .all-about .details .umumi {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+}
+section.details .orta .all-about .details .umumi .yuxari {
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+section.details .orta .all-about .details .umumi .yuxari a {
+  font-size: 19px;
+  font-weight: 400;
+  color: black;
+}
+section.details .orta .all-about .details .umumi .yuxari a:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .details .umumi .asagi {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .details .umumi .asagi .sol {
+  width: 50%;
+}
+section.details .orta .all-about .details .umumi .asagi .sol ul {
+  line-height: 29px;
+}
+section.details .orta .all-about .details .umumi .asagi .sol ul li {
+  width: 100%;
+}
+section.details .orta .all-about .details .umumi .asagi .sol ul li .span {
+  color: black;
+  font-size: 10px;
+}
+section.details .orta .all-about .details .umumi .asagi .sol ul li a {
+  color: grey;
+  font-size: 13px;
+}
+section.details .orta .all-about .details .umumi .asagi .sag {
+  width: 50%;
+}
+section.details .orta .all-about .details .umumi .asagi .sag ul {
+  line-height: 29px;
+}
+section.details .orta .all-about .details .umumi .asagi .sag ul li {
+  width: 100%;
+}
+section.details .orta .all-about .details .umumi .asagi .sag ul li .span {
+  color: black;
+  font-size: 10px;
+}
+section.details .orta .all-about .details .umumi .asagi .sag ul li a {
+  color: grey;
+  font-size: 13px;
+}
+section.details .orta .all-about .features {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+}
+section.details .orta .all-about .features .yuxari {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .features .yuxari .title {
+  margin: 30px 20px;
+}
+section.details .orta .all-about .features .yuxari .title h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+section.details .orta .all-about .features .interior-details {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .features .interior-details .yuxari {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.details .orta .all-about .features .interior-details .yuxari .title {
+  width: 30%;
+}
+section.details .orta .all-about .features .interior-details .yuxari .title h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+section.details .orta .all-about .features .interior-details .yuxari ul {
+  width: 70%;
+  display: flex;
+}
+section.details .orta .all-about .features .interior-details .yuxari ul li i {
+  font-size: 10px;
+  color: #bc8664;
+  border-radius: 50px;
+  border: 1px solid #bc8664;
+  padding: 2px;
+}
+section.details .orta .all-about .features .interior-details .yuxari ul li a {
+  color: grey;
+  font-size: 13px;
+}
+section.details .orta .all-about .features .outdoor-details {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .features .outdoor-details .yuxari {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.details .orta .all-about .features .outdoor-details .yuxari .title {
+  width: 30%;
+}
+section.details .orta .all-about .features .outdoor-details .yuxari .title h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+section.details .orta .all-about .features .outdoor-details .yuxari ul {
+  width: 70%;
+  display: flex;
+}
+section.details .orta .all-about .features .outdoor-details .yuxari ul li i {
+  font-size: 10px;
+  color: #bc8664;
+  border-radius: 50px;
+  border: 1px solid #bc8664;
+  padding: 2px;
+}
+section.details .orta .all-about .features .outdoor-details .yuxari ul li a {
+  color: grey;
+  font-size: 13px;
+}
+section.details .orta .all-about .features .utilites {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .features .utilites .yuxari {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.details .orta .all-about .features .utilites .yuxari .title {
+  width: 30%;
+}
+section.details .orta .all-about .features .utilites .yuxari .title h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+section.details .orta .all-about .features .utilites .yuxari ul {
+  width: 70%;
+  display: flex;
+}
+section.details .orta .all-about .features .utilites .yuxari ul li i {
+  font-size: 10px;
+  color: #bc8664;
+  border-radius: 50px;
+  border: 1px solid #bc8664;
+  padding: 2px;
+}
+section.details .orta .all-about .features .utilites .yuxari ul li a {
+  color: grey;
+  font-size: 13px;
+}
+section.details .orta .all-about .features .other-feauters {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .features .other-feauters .yuxari {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.details .orta .all-about .features .other-feauters .yuxari .title {
+  width: 30%;
+}
+section.details .orta .all-about .features .other-feauters .yuxari .title h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+section.details .orta .all-about .features .other-feauters .yuxari ul {
+  width: 70%;
+  display: flex;
+}
+section.details .orta .all-about .features .other-feauters .yuxari ul li i {
+  font-size: 10px;
+  color: #bc8664;
+  border-radius: 50px;
+  border: 1px solid #bc8664;
+  padding: 2px;
+}
+section.details .orta .all-about .features .other-feauters .yuxari ul li a {
+  color: grey;
+  font-size: 13px;
+}
+section.details .orta .all-about .video {
+  width: 100%;
+}
+section.details .orta .all-about .video .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  flex-direction: column;
+}
+section.details .orta .all-about .video .orta .yuxari {
+  width: 100%;
+  margin: 30px 10px;
+}
+section.details .orta .all-about .video .orta .yuxari .title {
+  width: 100%;
+}
+section.details .orta .all-about .video .orta .yuxari .title h2 {
+  font-size: 15px;
+}
+section.details .orta .all-about .video .orta .yuxari .title h2:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .video .orta .asagi {
+  width: 100%;
+}
+section.details .orta .all-about .video .orta .asagi img {
+  width: 100%;
+  border-radius: 10px;
+}
+section.details .orta .all-about .map .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  flex-direction: column;
+}
+section.details .orta .all-about .map .orta .yuxari {
+  width: 100%;
+  margin: 30px 10px;
+}
+section.details .orta .all-about .map .orta .yuxari .title {
+  width: 100%;
+}
+section.details .orta .all-about .map .orta .yuxari .title h2 {
+  font-size: 15px;
+}
+section.details .orta .all-about .map .orta .yuxari .title h2:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .map .orta .asagi {
+  width: 100%;
+}
+section.details .orta .all-about .map .orta .asagi img {
+  width: 100%;
+  border-radius: 10px;
+}
+section.details .orta .all-about .tour .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  flex-direction: column;
+}
+section.details .orta .all-about .tour .orta .yuxari {
+  width: 100%;
+  margin: 30px 10px;
+}
+section.details .orta .all-about .tour .orta .yuxari .title {
+  width: 100%;
+}
+section.details .orta .all-about .tour .orta .yuxari .title h2 {
+  font-size: 15px;
+}
+section.details .orta .all-about .tour .orta .yuxari .title h2:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .tour .orta .asagi {
+  width: 100%;
+}
+section.details .orta .all-about .tour .orta .asagi img {
+  width: 100%;
+  border-radius: 10px;
+}
+section.details .orta .all-about .calculator {
+  width: 100%;
+}
+section.details .orta .all-about .calculator .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  display: flex;
+}
+section.details .orta .all-about .calculator .orta .sol {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+section.details .orta .all-about .calculator .orta .sol img {
+  width: 376px;
+}
+section.details .orta .all-about .calculator .orta .sol a {
+  color: black;
+}
+section.details .orta .all-about .calculator .orta .sol input {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid rgb(182, 180, 180);
+}
+section.details .orta .all-about .calculator .orta .sag {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+section.details .orta .all-about .calculator .orta .sag .yuxari {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+section.details .orta .all-about .calculator .orta .sag .yuxari a {
+  color: black;
+}
+section.details .orta .all-about .calculator .orta .sag .asagi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section.details .orta .all-about .calculator .orta .sag .asagi a {
+  color: black;
+}
+section.details .orta .all-about .calculator .orta .sag .asagi input {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid rgb(182, 180, 180);
+}
+section.details .orta .all-about .plans {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .plans .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  flex-direction: column;
+}
+section.details .orta .all-about .plans .orta .top {
+  width: 100%;
+}
+section.details .orta .all-about .plans .orta .top .title {
+  width: 80%;
+}
+section.details .orta .all-about .plans .orta .top .title h2 {
+  font-size: 15px;
+}
+section.details .orta .all-about .plans .orta .top .title h2:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .plans .orta .top .line {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid rgb(253, 249, 249);
+  background-color: rgb(253, 249, 249);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+section.details .orta .all-about .plans .orta .top .line .one {
+  width: 40%;
+}
+section.details .orta .all-about .plans .orta .top .line .one span {
+  font-size: 13px;
+}
+section.details .orta .all-about .plans .orta .top .line .two {
+  width: 15%;
+}
+section.details .orta .all-about .plans .orta .top .line .two:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .plans .orta .top .line .two span {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .top .line .two a {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .top .line .three {
+  width: 15%;
+}
+section.details .orta .all-about .plans .orta .top .line .three span {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .top .line .three a {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .top .line .four {
+  width: 15%;
+}
+section.details .orta .all-about .plans .orta .top .line .four span {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .top .line .four a {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .top .line .five {
+  width: 15%;
+}
+section.details .orta .all-about .plans .orta .top .line .five span {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .top .line .five a {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .center {
+  width: 100%;
+  margin-top: 30px;
+}
+section.details .orta .all-about .plans .orta .center img {
+  width: 797px;
+  margin-left: 50px;
+}
+section.details .orta .all-about .plans .orta .center .subtitle {
+  width: 100%;
+  margin-top: 30px;
+}
+section.details .orta .all-about .plans .orta .center .subtitle p {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .bottom .line {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid rgb(253, 249, 249);
+  background-color: rgb(253, 249, 249);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+section.details .orta .all-about .plans .orta .bottom .line .one {
+  width: 40%;
+}
+section.details .orta .all-about .plans .orta .bottom .line .one span {
+  font-size: 13px;
+}
+section.details .orta .all-about .plans .orta .bottom .line .two {
+  width: 15%;
+}
+section.details .orta .all-about .plans .orta .bottom .line .two:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .plans .orta .bottom .line .two span {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .bottom .line .two a {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .bottom .line .three {
+  width: 15%;
+}
+section.details .orta .all-about .plans .orta .bottom .line .three span {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .bottom .line .three a {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .bottom .line .four {
+  width: 15%;
+}
+section.details .orta .all-about .plans .orta .bottom .line .four span {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .bottom .line .four a {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .bottom .line .five {
+  width: 15%;
+}
+section.details .orta .all-about .plans .orta .bottom .line .five span {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .plans .orta .bottom .line .five a {
+  font-size: 15px;
+  color: grey;
+}
+section.details .orta .all-about .statistics {
+  width: 100%;
+}
+section.details .orta .all-about .statistics .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  flex-direction: column;
+}
+section.details .orta .all-about .statistics .orta .yuxari {
+  width: 100%;
+  margin: 30px 10px;
+}
+section.details .orta .all-about .statistics .orta .yuxari .title {
+  width: 100%;
+}
+section.details .orta .all-about .statistics .orta .yuxari .title h2 {
+  font-size: 15px;
+}
+section.details .orta .all-about .statistics .orta .yuxari .title h2:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .statistics .orta .asagi {
+  width: 100%;
+}
+section.details .orta .all-about .statistics .orta .asagi img {
+  width: 100%;
+  border-radius: 10px;
+}
+section.details .orta .all-about .schedule {
+  width: 100%;
+}
+section.details .orta .all-about .schedule .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .schedule .orta .yuxari {
+  width: 100%;
+  margin: 30px 10px;
+}
+section.details .orta .all-about .schedule .orta .yuxari .title {
+  width: 100%;
+}
+section.details .orta .all-about .schedule .orta .yuxari .title h2 {
+  font-size: 15px;
+}
+section.details .orta .all-about .schedule .orta .yuxari .title h2:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .schedule .orta .asagi {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .schedule .orta .asagi .sol {
+  width: 50%;
+}
+section.details .orta .all-about .schedule .orta .asagi .sol img {
+  width: 438px;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .bir {
+  width: 100%;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .bir input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(180, 177, 177);
+  border-radius: 10px;
+  margin-top: 5px;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .iki {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .iki .sol {
+  width: 40%;
+  border: 1px solid #bc8664;
+  border-radius: 10px;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .iki .sol i {
+  font-size: 12px;
+  color: #bc8664;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .iki .sol a {
+  font-size: 13px;
+  color: #bc8664;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .iki .sag {
+  width: 60%;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .iki .sag i {
+  font-size: 13px;
+  color: gray;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .iki .sag a {
+  font-size: 13px;
+  color: gray;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .uc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .uc input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(180, 177, 177);
+  border-radius: 10px;
+  margin-top: 5px;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .dord {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .dord textarea {
+  width: 100%;
+  padding: 65px;
+  border: 1px solid rgb(180, 177, 177);
+  border-radius: 10px;
+  margin-top: 5px;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .dord button {
+  width: 100;
+  margin-top: 20px;
+  border: 1px solid;
+  background-color: #bc8664;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+section.details .orta .all-about .schedule .orta .asagi .sag .dord button:hover {
+  background-color: white;
+  color: #bc8664;
+}
+section.details .orta .all-about .person {
+  width: 100%;
+}
+section.details .orta .all-about .person .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .person .orta .yuxari {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .person .orta .yuxari .sol {
+  width: 50%;
+}
+section.details .orta .all-about .person .orta .yuxari .sol img {
+  width: 280px;
+  border-radius: 7px;
+}
+section.details .orta .all-about .person .orta .yuxari .sol .box {
+  width: 100%;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 15px;
+}
+section.details .orta .all-about .person .orta .yuxari .sol .box i {
+  font-size: 17px;
+  color: gray;
+}
+section.details .orta .all-about .person .orta .yuxari .sag {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .person .orta .yuxari .sag .title {
+  width: 100%;
+}
+section.details .orta .all-about .person .orta .yuxari .sag .title h2 {
+  font-size: 22px;
+}
+section.details .orta .all-about .person .orta .yuxari .sag .subtitle {
+  width: 100%;
+}
+section.details .orta .all-about .person .orta .yuxari .sag .subtitle p {
+  font-size: 17px;
+  color: gray;
+}
+section.details .orta .all-about .person .orta .yuxari .sag ul {
+  width: 100%;
+  margin-top: 20px;
+}
+section.details .orta .all-about .person .orta .yuxari .sag ul li {
+  display: flex;
+  margin-top: 10px;
+}
+section.details .orta .all-about .person .orta .yuxari .sag ul li i {
+  font-size: 15px;
+  color: gray;
+}
+section.details .orta .all-about .person .orta .yuxari .sag ul li a {
+  font-size: 15px;
+  color: gray;
+  margin-left: 5px;
+}
+section.details .orta .all-about .person .orta .asagi {
+  width: 100%;
+  margin-top: 20px;
+}
+section.details .orta .all-about .person .orta .asagi .bir {
+  width: 100%;
+  display: flex;
+}
+section.details .orta .all-about .person .orta .asagi .bir .title {
+  width: 20%;
+}
+section.details .orta .all-about .person .orta .asagi .bir .title h2 {
+  font-size: 20px;
+}
+section.details .orta .all-about .person .orta .asagi .bir span {
+  width: 20%;
+  border: 1px solid #69c17d;
+  border-radius: 10px;
+  color: white;
+  background-color: #69c17d;
+  padding: 1px;
+  font-size: 15px;
+}
+section.details .orta .all-about .person .orta .asagi .bir span:hover {
+  background-color: rgba(109, 189, 146, 0.8509803922);
+  border: 1px solid rgba(109, 189, 146, 0.8509803922);
+}
+section.details .orta .all-about .person .orta .asagi .uc {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+section.details .orta .all-about .person .orta .asagi .uc input {
+  width: 30%;
+  border: 1px solid rgb(233, 232, 232);
+  border-radius: 10px;
+  padding: 10px;
+}
+section.details .orta .all-about .person .orta .asagi .dord {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+section.details .orta .all-about .person .orta .asagi .dord input {
+  width: 100%;
+  border: 1px solid rgb(233, 232, 232);
+  border-radius: 10px;
+  padding: 65px;
+}
+section.details .orta .all-about .person .orta .asagi .bes {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+section.details .orta .all-about .person .orta .asagi .bes ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+section.details .orta .all-about .person .orta .asagi .bes ul li {
+  border: 1px solid #bc8664;
+  border-radius: 10px;
+  padding: 12px 35px;
+  background-color: #bc8664;
+  gap: 10px;
+  position: relative;
+  color: #bc8664;
+}
+section.details .orta .all-about .person .orta .asagi .bes ul li:before {
+  content: "";
+  width: 0;
+  height: 100%;
+  background-color: #bc8664;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+section.details .orta .all-about .person .orta .asagi .bes ul li:hover:before {
+  width: 100%;
+}
+section.details .orta .all-about .person .orta .asagi .bes ul li > span, section.details .orta .all-about .person .orta .asagi .bes ul li > i, section.details .orta .all-about .person .orta .asagi .bes ul li > a {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+section.details .orta .all-about .person .orta .asagi .bes ul li:hover {
+  background-color: white;
+}
+section.details .orta .all-about .person .orta .asagi .bes ul li:hover span, section.details .orta .all-about .person .orta .asagi .bes ul li:hover i, section.details .orta .all-about .person .orta .asagi .bes ul li:hover a {
+  color: #bc8664;
+}
+section.details .orta .all-about .reviews {
+  width: 100%;
+}
+section.details .orta .all-about .reviews .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .reviews .orta .yuxari {
+  width: 100%;
+}
+section.details .orta .all-about .reviews .orta .yuxari .title {
+  width: 100%;
+}
+section.details .orta .all-about .reviews .orta .yuxari .title h2 {
+  font-size: 19px;
+}
+section.details .orta .all-about .reviews .orta .yuxari .title h2:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .reviews .orta .asagi {
+  width: 100%;
+  margin-top: 20px;
+}
+section.details .orta .all-about .reviews .orta .asagi .bar {
+  width: 100%;
+  background-color: rgb(250, 247, 247);
+  border: 1px solid rgb(250, 247, 247);
+  border-radius: 10px;
+  padding: 11px;
+}
+section.details .orta .all-about .reviews .orta .asagi .bar .title {
+  width: 80%;
+}
+section.details .orta .all-about .reviews .orta .asagi .bar .title h2 {
+  font-size: 15px;
+  color: rgb(78, 78, 78);
+}
+section.details .orta .all-about .listings {
+  width: 100%;
+}
+section.details .orta .all-about .listings .orta {
+  width: 100%;
+  margin: 37px 28px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 15px;
+  padding: 21px;
+  flex-direction: column;
+}
+section.details .orta .all-about .listings .orta .top {
+  width: 100%;
+}
+section.details .orta .all-about .listings .orta .top .title {
+  width: 50%;
+}
+section.details .orta .all-about .listings .orta .top .title h2 {
+  font-size: 25px;
+}
+section.details .orta .all-about .listings .orta .bottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card {
+  width: 50%;
+  margin-top: 30px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header {
+  width: 90%;
+  position: relative;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags {
+  width: 70%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .featured {
+  width: 30%;
+  margin-left: 5px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .featured span {
+  border: 1px solid rgba(109, 189, 146, 0.8509803922);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(109, 189, 146, 0.8509803922);
+  color: white;
+  font-size: 12px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .tags {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .tags ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .tags ul li {
+  width: 45%;
+  border: 1px solid #bc8664;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: #bc8664;
+  display: flex;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .tags ul li a {
+  color: white;
+  font-size: 12px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-image {
+  width: 100%;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-image img {
+  width: 435px;
+  border-radius: 21px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-owner {
+  width: 100%;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-owner img {
+  width: 48px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-wishlist {
+  width: 100%;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-body {
+  width: 100%;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-body .estate-title {
+  width: 60%;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-body .estate-title a {
+  color: black;
+  font-size: 21px;
+  font-weight: 400;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-body .estate-title a:hover {
+  color: #bc8664;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-description ul {
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+  margin-top: 5px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-description ul li {
+  color: grey;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-price {
+  width: 100%;
+  margin-top: 10px;
+}
+section.details .orta .all-about .listings .orta .bottom .estate-card .estate-price span {
+  color: #bc8664;
+}
+section.details .orta .right-sidebar {
+  width: 24%;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+section.details .orta .right-sidebar .box {
+  width: 100%;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+}
+section.details .orta .right-sidebar .box .top {
+  width: 100%;
+  gap: 118px;
+  margin: 10px 5px;
+}
+section.details .orta .right-sidebar .box .top a {
+  color: black;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 570;
+}
+section.details .orta .right-sidebar .box .center {
+  width: 100%;
+  margin: 10px 5px;
+}
+section.details .orta .right-sidebar .box .center .sol {
+  width: 50%;
+}
+section.details .orta .right-sidebar .box .center .sol img {
+  width: 82px;
+  border-radius: 10px;
+}
+section.details .orta .right-sidebar .box .center .sag {
+  width: 50%;
+}
+section.details .orta .right-sidebar .box .center .sag .title {
+  width: 69%;
+}
+section.details .orta .right-sidebar .box .center .sag .title h2 {
+  font-size: 17px;
+  font-weight: 550;
+}
+section.details .orta .right-sidebar .box .center .sag .subtitle {
+  width: 69%;
+}
+section.details .orta .right-sidebar .box .center .sag .subtitle p {
+  color: #bc8664;
+}
+section.details .orta .right-sidebar .box .bottom {
+  width: 100%;
+  margin: 10px 5px;
+}
+section.details .orta .right-sidebar .box .bottom .button {
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(109, 189, 146, 0.8509803922);
+  border-radius: 10px;
+}
+section.details .orta .right-sidebar .box .bottom .button:hover {
+  background-color: #69c17d;
+}
+section.details .orta .right-sidebar .box .bottom .button span {
+  width: 100%;
+  color: white;
+}
+section.details .orta .right-sidebar .box .bottom input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(180, 177, 177);
+  border-radius: 10px;
+  margin-top: 5px;
+}
+section.details .orta .right-sidebar .box .last {
+  width: 100%;
+  margin: 10px 5px;
+}
+section.details .orta .right-sidebar .box .last input {
+  width: 100%;
+  padding: 65px;
+  border: 1px solid rgb(180, 177, 177);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+section.details .orta .right-sidebar .box .last button {
+  width: 100%;
+  border: 1px solid #bc8664;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #bc8664;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+section.details .orta .right-sidebar .box .last button:hover {
+  background-color: white;
+  color: #bc8664;
+}
+section.details .orta .right-sidebar .box .tag {
+  width: 100%;
+  display: flex;
+  margin: 20px 6px;
+  gap: 10px;
+}
+section.details .orta .right-sidebar .box .tag .sol {
+  width: 50%;
+  border: 1px solid #bc8664;
+  border-radius: 10px;
+  padding: 10px;
+}
+section.details .orta .right-sidebar .box .tag .sol:hover {
+  background-color: #bc8664;
+  color: white;
+}
+section.details .orta .right-sidebar .box .tag .sol i {
+  color: #bc8664;
+}
+section.details .orta .right-sidebar .box .tag .sol a {
+  color: #bc8664;
+}
+section.details .orta .right-sidebar .box .tag .sag {
+  width: 50%;
+  border: 1px solid #bc8664;
+  border-radius: 10px;
+  padding: 10px;
+}
+section.details .orta .right-sidebar .box .tag .sag:hover {
+  background-color: #bc8664;
+  color: white;
+}
+section.details .orta .right-sidebar .box .tag .sag i {
+  color: #bc8664;
+}
+section.details .orta .right-sidebar .box .tag .sag a {
+  color: #bc8664;
+}
+
+@media (min-width: 336px) and (max-width: 1336px) {
+  header {
+    width: 100%;
+    padding: 15px 0;
+    background-color: black;
+  }
+  header .orta {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .orta .logo {
+    width: 260px;
+    display: none;
+  }
+  header .orta .logo img {
+    width: 100%;
+    margin: 20px 0;
+    display: none;
+  }
+  header .orta .logoi {
+    width: 157px;
+    display: flex;
+  }
+  header .orta .logoi img {
+    width: 165px;
+    display: flex;
+  }
+  header .orta .navbar {
+    width: 50%;
+    display: none;
+  }
+  header .orta .navbar ul {
+    display: flex;
+    gap: 10px;
+  }
+  header .orta .navbar ul li:first-child a {
+    color: #bc8664;
+    display: none;
+  }
+  header .orta .navbar ul li a {
+    color: black;
+    font-size: 17px;
+  }
+  header .orta .navbar ul li a:hover {
+    border: 1px solid color #bc8664;
+    color: white;
+    background-color: #bc8664;
+    border-radius: 50px;
+    padding: 10px;
+  }
+  header .orta .cta {
+    width: 7%;
+  }
+  header .orta .cta ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  header .orta .cta ul li:first-child {
+    display: none;
+  }
+  header .orta .cta ul li a {
+    font-size: 17px;
+    color: black;
+  }
+  header .orta .cta ul li a i {
+    color: #bc8664;
+  }
+  header .orta .cta ul li a i .span {
+    color: black;
+    display: none;
+  }
+  header .orta .none {
+    width: 10%;
+    display: flex;
+  }
+  header .orta .none i {
+    color: #bc8664;
+    display: flex;
+  }
+  section.words {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  section.words .orta {
+    width: 69%;
+  }
+  section.words .orta ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  section.words .orta ul li a {
+    color: gray;
+    font-size: 14px;
+  }
+  section.words .orta ul span {
+    font-size: 15px;
+  }
+  section.tags {
+    width: 100%;
+  }
+  section.tags .orta {
+    width: 100%;
+    margin-left: 19px;
+  }
+  section.tags .orta .bottom {
+    width: 63%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  section.tags .orta .bottom i {
+    font-size: 10px;
+    display: flex;
+  }
+  section.tags .orta .bottom span {
+    font-size: 10px;
+    display: flex;
+  }
+  section.tags .orta .yuxari {
+    width: 100%;
+    display: flex;
+    gap: 13px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  section.tags .orta .yuxari a {
+    width: 30%;
+    font-size: 15px;
+    padding: 6px;
+    border: 1px solid #bc8664;
+    border-radius: 50px;
+    background-color: #bc8664;
+    color: white;
+  }
+  section.tags .asagi {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+  }
+  section.tags .asagi .sol {
+    width: 100%;
+  }
+  section.tags .asagi .sol .title {
+    width: 100%;
+    margin-left: -5px;
+  }
+  section.tags .asagi .sol .title h2 {
+    font-size: 27px;
+  }
+  section.tags .asagi .sol .top {
+    width: 51%;
+    display: flex;
+    margin-top: 20px;
+  }
+  section.tags .asagi .sol .top span {
+    color: #bc8664;
+    font-size: 27px;
+    display: flex;
+  }
+  section.tags .asagi .sol .subtitle {
+    width: 100%;
+    margin-left: -1px;
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  section.tags .asagi .sol .subtitle i {
+    font-size: 17px;
+    color: gray;
+  }
+  section.tags .asagi .sol .subtitle p {
+    font-size: 16px;
+    color: gray;
+  }
+  section.tags .asagi .sag {
+    width: 100%;
+  }
+  section.tags .asagi .sag .top {
+    width: 100%;
+    display: none;
+  }
+  section.tags .asagi .sag .top span {
+    color: #bc8664;
+    font-size: 30px;
+    display: none;
+  }
+  section.tags .asagi .sag .bottom {
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+  }
+  section.tags .asagi .sag .bottom i {
+    font-size: 10px;
+    display: none;
+  }
+  section.tags .asagi .sag .bottom span {
+    font-size: 10px;
+    display: none;
+  }
+  section.images {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.images .orta {
+    width: 100%;
+    margin-left: -27px;
+    gap: 5px;
+  }
+  section.images .orta .sol {
+    width: 100%;
+  }
+  section.images .orta .sol img {
+    width: 100%;
+  }
+  section.images .orta .center {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+  }
+  section.images .orta .center img {
+    width: 100%;
+    display: none;
+  }
+  section.images .orta .sag {
+    width: 100%;
+    overflow: hidden;
+    display: none;
+  }
+  section.images .orta .sag img {
+    width: 100%;
+    display: none;
+  }
+  section.overview {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    background-color: #f9f5f5;
+  }
+  section.overview .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.overview .orta .yuxari {
+    width: 100%;
+  }
+  section.overview .orta .yuxari a {
+    width: 70%;
+    font-size: 20px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.overview .orta .asagi {
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.overview .orta .asagi ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.overview .orta .asagi ul li {
+    width: 30%;
+  }
+  section.overview .orta .asagi ul li span {
+    width: 100%;
+    font-size: 10px;
+  }
+  section.overview .orta .asagi ul li i {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  section.overview .orta .asagi ul li a {
+    color: black;
+    font-size: 13px;
+  }
+  section.details {
+    width: 100%;
+    background-color: #f9f5f5;
+    margin-top: 30px;
+  }
+  section.details .orta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  section.details .orta .all-about {
+    width: 95%;
+  }
+  section.details .orta .all-about .description {
+    width: 100%;
+  }
+  section.details .orta .all-about .description .center {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .description .center .title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.details .orta .all-about .description .center .title h2 {
+    width: 70%;
+    font-size: 20px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .description .center .subtitle {
+    width: 85%;
+  }
+  section.details .orta .all-about .description .center .subtitle p {
+    font-size: 13px;
+    color: gray;
+    line-height: 23px;
+  }
+  section.details .orta .all-about .adress {
+    width: 100%;
+  }
+  section.details .orta .all-about .adress .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .adress .orta .yuxari {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+  section.details .orta .all-about .adress .orta .yuxari a {
+    width: 70%;
+    font-size: 20px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .adress .orta .yuxari a:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .adress .orta .asagi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol {
+    width: 72%;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol .top {
+    width: 100%;
+    display: flex;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol .top ul {
+    line-height: 29px;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol .top ul li {
+    width: 100%;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol .top ul li .span {
+    color: black;
+    font-size: 10px;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol .top ul li a {
+    color: grey;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol .bottom {
+    width: 33%;
+    border: 1px solid rgba(109, 189, 146, 0.8509803922);
+    border-radius: 20px;
+    padding: 3px;
+    background-color: rgba(109, 189, 146, 0.8509803922);
+    margin: 25px 0px;
+    display: none;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol .bottom:hover {
+    background-color: #69c17d;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sol .bottom span {
+    color: white;
+    display: none;
+    font-size: 13px;
+    display: none;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sag {
+    width: 55%;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sag ul {
+    line-height: 29px;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sag ul li {
+    width: 100%;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sag ul li .span {
+    color: black;
+    font-size: 10px;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sag ul li a {
+    color: grey;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sag .bottom {
+    width: 100%;
+    border: 1px solid rgba(109, 189, 146, 0.8509803922);
+    border-radius: 20px;
+    padding: 3px;
+    background-color: rgba(109, 189, 146, 0.8509803922);
+    margin: 25px 0px;
+    display: flex;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sag .bottom:hover {
+    background-color: #69c17d;
+  }
+  section.details .orta .all-about .adress .orta .asagi .sag .bottom span {
+    color: white;
+    font-size: 13px;
+    display: flex;
+  }
+  section.details .orta .all-about .details {
+    width: 100%;
+  }
+  section.details .orta .all-about .details .umumi {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .details .umumi .yuxari {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+  section.details .orta .all-about .details .umumi .yuxari a {
+    width: 70%;
+    font-size: 20px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .details .umumi .yuxari a:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .details .umumi .asagi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sol {
+    width: 50%;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sol ul {
+    line-height: 29px;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sol ul li {
+    width: 100%;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sol ul li .span {
+    color: black;
+    font-size: 10px;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sol ul li a {
+    color: grey;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sag {
+    width: 60%;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sag ul {
+    line-height: 29px;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sag ul li {
+    width: 100%;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sag ul li .span {
+    color: black;
+    font-size: 10px;
+  }
+  section.details .orta .all-about .details .umumi .asagi .sag ul li a {
+    color: grey;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .features {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .features .yuxari {
+    width: 100%;
+    display: flex;
+  }
+  section.details .orta .all-about .features .yuxari .title {
+    margin: 20px 10px;
+  }
+  section.details .orta .all-about .features .yuxari .title h2 {
+    width: 70%;
+    font-size: 20px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .features .interior-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .features .interior-details .yuxari {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.details .orta .all-about .features .interior-details .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .features .interior-details .yuxari .title h2 {
+    width: 70%;
+    font-size: 17px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .features .interior-details .yuxari ul {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .features .interior-details .yuxari ul li i {
+    font-size: 10px;
+    color: #bc8664;
+    border-radius: 50px;
+    border: 1px solid #bc8664;
+    padding: 2px;
+  }
+  section.details .orta .all-about .features .interior-details .yuxari ul li a {
+    color: grey;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .features .outdoor-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .features .outdoor-details .yuxari {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.details .orta .all-about .features .outdoor-details .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .features .outdoor-details .yuxari .title h2 {
+    width: 70%;
+    font-size: 17px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .features .outdoor-details .yuxari ul {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .features .outdoor-details .yuxari ul li i {
+    font-size: 10px;
+    color: #bc8664;
+    border-radius: 50px;
+    border: 1px solid #bc8664;
+    padding: 2px;
+  }
+  section.details .orta .all-about .features .outdoor-details .yuxari ul li a {
+    color: grey;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .features .utilites {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .features .utilites .yuxari {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.details .orta .all-about .features .utilites .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .features .utilites .yuxari .title h2 {
+    width: 70%;
+    font-size: 17px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .features .utilites .yuxari ul {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .features .utilites .yuxari ul li i {
+    font-size: 10px;
+    color: #bc8664;
+    border-radius: 50px;
+    border: 1px solid #bc8664;
+    padding: 2px;
+  }
+  section.details .orta .all-about .features .utilites .yuxari ul li a {
+    color: grey;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .features .other-feauters {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .features .other-feauters .yuxari {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.details .orta .all-about .features .other-feauters .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .features .other-feauters .yuxari .title h2 {
+    width: 70%;
+    font-size: 17px;
+    color: black;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .features .other-feauters .yuxari ul {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .features .other-feauters .yuxari ul li i {
+    font-size: 10px;
+    color: #bc8664;
+    border-radius: 50px;
+    border: 1px solid #bc8664;
+    padding: 2px;
+  }
+  section.details .orta .all-about .features .other-feauters .yuxari ul li a {
+    color: grey;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .video {
+    width: 100%;
+  }
+  section.details .orta .all-about .video .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .video .orta .yuxari {
+    width: 100%;
+    margin: 30px 10px;
+  }
+  section.details .orta .all-about .video .orta .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .video .orta .yuxari .title h2 {
+    font-size: 15px;
+  }
+  section.details .orta .all-about .video .orta .yuxari .title h2:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .video .orta .asagi {
+    width: 100%;
+  }
+  section.details .orta .all-about .video .orta .asagi img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  section.details .orta .all-about .map .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .map .orta .yuxari {
+    width: 100%;
+    margin: 30px 10px;
+  }
+  section.details .orta .all-about .map .orta .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .map .orta .yuxari .title h2 {
+    font-size: 15px;
+  }
+  section.details .orta .all-about .map .orta .yuxari .title h2:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .map .orta .asagi {
+    width: 100%;
+  }
+  section.details .orta .all-about .map .orta .asagi img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  section.details .orta .all-about .tour .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .tour .orta .yuxari {
+    width: 100%;
+    margin: 30px 10px;
+  }
+  section.details .orta .all-about .tour .orta .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .tour .orta .yuxari .title h2 {
+    font-size: 15px;
+  }
+  section.details .orta .all-about .tour .orta .yuxari .title h2:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .tour .orta .asagi {
+    width: 100%;
+  }
+  section.details .orta .all-about .tour .orta .asagi img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  section.details .orta .all-about .calculator {
+    width: 100%;
+  }
+  section.details .orta .all-about .calculator .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .calculator .orta .sol {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  section.details .orta .all-about .calculator .orta .sol img {
+    width: 295px;
+    margin-left: -13px;
+  }
+  section.details .orta .all-about .calculator .orta .sol a {
+    color: black;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .calculator .orta .sol input {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid rgb(182, 180, 180);
+  }
+  section.details .orta .all-about .calculator .orta .sag {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  section.details .orta .all-about .calculator .orta .sag .yuxari {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  section.details .orta .all-about .calculator .orta .sag .yuxari a {
+    color: black;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .calculator .orta .sag .asagi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section.details .orta .all-about .calculator .orta .sag .asagi a {
+    color: black;
+    font-size: 13px;
+  }
+  section.details .orta .all-about .calculator .orta .sag .asagi input {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid rgb(182, 180, 180);
+  }
+  section.details .orta .all-about .plans {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .plans .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .plans .orta .top {
+    width: 100%;
+  }
+  section.details .orta .all-about .plans .orta .top .title {
+    width: 80%;
+  }
+  section.details .orta .all-about .plans .orta .top .title h2 {
+    font-size: 15px;
+  }
+  section.details .orta .all-about .plans .orta .top .title h2:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .plans .orta .top .line {
+    width: 70%;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid rgb(253, 249, 249);
+    background-color: rgb(253, 249, 249);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  section.details .orta .all-about .plans .orta .top .line .one {
+    width: 46%;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .top .line .one span {
+    font-size: 13px;
+  }
+  section.details .orta .all-about .plans .orta .top .line .two {
+    width: 62%;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .top .line .two:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .plans .orta .top .line .two span {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .top .line .two a {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .top .line .three {
+    width: 62%;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .top .line .three span {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .top .line .three a {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .top .line .four {
+    width: 62%;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .top .line .four span {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .top .line .four a {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .top .line .five {
+    width: 62%;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .top .line .five span {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .top .line .five a {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .center {
+    width: 100%;
+    margin-top: 30px;
+  }
+  section.details .orta .all-about .plans .orta .center img {
+    width: 100%;
+    margin-left: 5px;
+  }
+  section.details .orta .all-about .plans .orta .center .subtitle {
+    width: 93%;
+    margin-top: 30px;
+  }
+  section.details .orta .all-about .plans .orta .center .subtitle p {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line {
+    width: 70%;
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid rgb(253, 249, 249);
+    background-color: rgb(253, 249, 249);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .one {
+    width: 46%;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .one span {
+    font-size: 13px;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .two {
+    width: 62%;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .two:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .two span {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .two a {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .three {
+    width: 62%;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .three span {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .three a {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .four {
+    width: 62%;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .four span {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .four a {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .five {
+    width: 62%;
+    margin-bottom: 10px;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .five span {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .plans .orta .bottom .line .five a {
+    font-size: 15px;
+    color: grey;
+  }
+  section.details .orta .all-about .statistics {
+    width: 100%;
+  }
+  section.details .orta .all-about .statistics .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .statistics .orta .yuxari {
+    width: 100%;
+    margin: 30px 10px;
+  }
+  section.details .orta .all-about .statistics .orta .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .statistics .orta .yuxari .title h2 {
+    font-size: 15px;
+  }
+  section.details .orta .all-about .statistics .orta .yuxari .title h2:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .statistics .orta .asagi {
+    width: 100%;
+  }
+  section.details .orta .all-about .statistics .orta .asagi img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  section.details .orta .all-about .schedule {
+    width: 100%;
+  }
+  section.details .orta .all-about .schedule .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .schedule .orta .yuxari {
+    width: 100%;
+    margin: 30px 10px;
+  }
+  section.details .orta .all-about .schedule .orta .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .schedule .orta .yuxari .title h2 {
+    font-size: 15px;
+  }
+  section.details .orta .all-about .schedule .orta .yuxari .title h2:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .schedule .orta .asagi {
+    width: 100%;
+    display: flex;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sol {
+    width: 50%;
+    display: none;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sol img {
+    width: 438px;
+    display: none;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .bir {
+    width: 100%;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .bir input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(180, 177, 177);
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .iki {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .iki .sol {
+    width: 40%;
+    border: 1px solid #bc8664;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .iki .sol i {
+    font-size: 12px;
+    color: #bc8664;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .iki .sol a {
+    font-size: 13px;
+    color: #bc8664;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .iki .sag {
+    width: 60%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .iki .sag i {
+    font-size: 13px;
+    color: gray;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .iki .sag a {
+    font-size: 13px;
+    color: gray;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .uc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .uc input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(180, 177, 177);
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .dord {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .dord textarea {
+    width: 100%;
+    padding: 65px;
+    border: 1px solid rgb(180, 177, 177);
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .dord button {
+    width: 100;
+    margin-top: 20px;
+    border: 1px solid;
+    background-color: #bc8664;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  section.details .orta .all-about .schedule .orta .asagi .sag .dord button:hover {
+    background-color: white;
+    color: #bc8664;
+  }
+  section.details .orta .all-about .person {
+    width: 100%;
+  }
+  section.details .orta .all-about .person .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .person .orta .yuxari {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sol {
+    width: 100%;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sol img {
+    width: 255px;
+    border-radius: 7px;
+    margin-left: 15px;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sol .box {
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 15px;
+    margin-left: 15px;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sol .box i {
+    font-size: 17px;
+    color: gray;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag .title h2 {
+    font-size: 22px;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag .subtitle {
+    width: 100%;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag .subtitle p {
+    font-size: 17px;
+    color: gray;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag ul {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag ul li {
+    display: flex;
+    margin-top: 10px;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag ul li i {
+    font-size: 15px;
+    color: gray;
+  }
+  section.details .orta .all-about .person .orta .yuxari .sag ul li a {
+    font-size: 15px;
+    color: gray;
+    margin-left: 5px;
+  }
+  section.details .orta .all-about .person .orta .asagi {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.details .orta .all-about .person .orta .asagi .bir {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .person .orta .asagi .bir .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .person .orta .asagi .bir .title h2 {
+    font-size: 20px;
+  }
+  section.details .orta .all-about .person .orta .asagi .bir span {
+    width: 80%;
+    border: 1px solid #69c17d;
+    border-radius: 10px;
+    color: white;
+    background-color: #69c17d;
+    padding: 1px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  section.details .orta .all-about .person .orta .asagi .bir span:hover {
+    background-color: rgba(109, 189, 146, 0.8509803922);
+    border: 1px solid rgba(109, 189, 146, 0.8509803922);
+  }
+  section.details .orta .all-about .person .orta .asagi .uc {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .person .orta .asagi .uc input {
+    width: 100%;
+    border: 1px solid rgb(233, 232, 232);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  section.details .orta .all-about .person .orta .asagi .dord {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  section.details .orta .all-about .person .orta .asagi .dord input {
+    width: 100%;
+    border: 1px solid rgb(233, 232, 232);
+    border-radius: 10px;
+    padding: 65px;
+  }
+  section.details .orta .all-about .person .orta .asagi .bes {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+  }
+  section.details .orta .all-about .person .orta .asagi .bes ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  section.details .orta .all-about .person .orta .asagi .bes ul li {
+    border: 1px solid #bc8664;
+    border-radius: 10px;
+    padding: 12px 35px;
+    background-color: #bc8664;
+    gap: 10px;
+    position: relative;
+    color: #bc8664;
+  }
+  section.details .orta .all-about .person .orta .asagi .bes ul li:before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #bc8664;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition-duration: 1s;
+  }
+  section.details .orta .all-about .person .orta .asagi .bes ul li:hover:before {
+    width: 100%;
+  }
+  section.details .orta .all-about .person .orta .asagi .bes ul li > span, section.details .orta .all-about .person .orta .asagi .bes ul li > i, section.details .orta .all-about .person .orta .asagi .bes ul li > a {
+    color: white;
+    position: relative;
+    z-index: 2;
+  }
+  section.details .orta .all-about .person .orta .asagi .bes ul li:hover {
+    background-color: white;
+  }
+  section.details .orta .all-about .person .orta .asagi .bes ul li:hover span, section.details .orta .all-about .person .orta .asagi .bes ul li:hover i, section.details .orta .all-about .person .orta .asagi .bes ul li:hover a {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .reviews {
+    width: 100%;
+  }
+  section.details .orta .all-about .reviews .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .reviews .orta .yuxari {
+    width: 100%;
+  }
+  section.details .orta .all-about .reviews .orta .yuxari .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .reviews .orta .yuxari .title h2 {
+    font-size: 19px;
+  }
+  section.details .orta .all-about .reviews .orta .yuxari .title h2:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .reviews .orta .asagi {
+    width: 100%;
+    margin-top: 20px;
+  }
+  section.details .orta .all-about .reviews .orta .asagi .bar {
+    width: 100%;
+    background-color: rgb(250, 247, 247);
+    border: 1px solid rgb(250, 247, 247);
+    border-radius: 10px;
+    padding: 11px;
+  }
+  section.details .orta .all-about .reviews .orta .asagi .bar .title {
+    width: 100%;
+  }
+  section.details .orta .all-about .reviews .orta .asagi .bar .title h2 {
+    font-size: 13px;
+    color: rgb(78, 78, 78);
+  }
+  section.details .orta .all-about .listings {
+    width: 100%;
+  }
+  section.details .orta .all-about .listings .orta {
+    width: 100%;
+    margin: 20px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+  }
+  section.details .orta .all-about .listings .orta .top {
+    width: 100%;
+  }
+  section.details .orta .all-about .listings .orta .top .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+  }
+  section.details .orta .all-about .listings .orta .top .title .h2 {
+    font-size: 21px;
+  }
+  section.details .orta .all-about .listings .orta .bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card {
+    width: 100%;
+    margin-top: 30px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header {
+    width: 100%;
+    position: relative;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags {
+    width: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .featured {
+    width: 30%;
+    margin-left: 5px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .featured span {
+    border: 1px solid rgba(109, 189, 146, 0.8509803922);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(109, 189, 146, 0.8509803922);
+    color: white;
+    font-size: 12px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .tags {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .tags ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .tags ul li {
+    width: 45%;
+    border: 1px solid #bc8664;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #bc8664;
+    display: flex;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-tags .tags ul li a {
+    color: white;
+    font-size: 12px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-image {
+    width: 100%;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-image img {
+    width: 100%;
+    border-radius: 21px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-owner {
+    width: 100%;
+    position: absolute;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-owner img {
+    width: 48px;
+    margin-top: -31px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-wishlist {
+    width: 100%;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-header .estate-wishlist i {
+    margin-left: 230px;
+    margin-top: -30px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-body {
+    width: 100%;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-body .estate-title {
+    width: 60%;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-body .estate-title a {
+    color: black;
+    font-size: 21px;
+    font-weight: 400;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-body .estate-title a:hover {
+    color: #bc8664;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-description ul {
+    display: flex;
+    font-size: 14px;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-description ul li {
+    color: grey;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-price {
+    width: 100%;
+    margin-top: 10px;
+  }
+  section.details .orta .all-about .listings .orta .bottom .estate-card .estate-price span {
+    color: #bc8664;
+  }
+  section.details .orta .right-sidebar {
+    width: 24%;
+    justify-content: flex-end;
+    overflow: hidden;
+    display: none;
+  }
+  section.details .orta .right-sidebar .box {
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+  }
+  section.details .orta .right-sidebar .box .top {
+    width: 100%;
+    gap: 118px;
+    margin: 10px 5px;
+  }
+  section.details .orta .right-sidebar .box .top a {
+    color: black;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 570;
+  }
+  section.details .orta .right-sidebar .box .center {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  section.details .orta .right-sidebar .box .center .sol {
+    width: 50%;
+  }
+  section.details .orta .right-sidebar .box .center .sol img {
+    width: 82px;
+    border-radius: 10px;
+  }
+  section.details .orta .right-sidebar .box .center .sag {
+    width: 50%;
+  }
+  section.details .orta .right-sidebar .box .center .sag .title {
+    width: 69%;
+  }
+  section.details .orta .right-sidebar .box .center .sag .title h2 {
+    font-size: 17px;
+    font-weight: 550;
+  }
+  section.details .orta .right-sidebar .box .center .sag .subtitle {
+    width: 69%;
+  }
+  section.details .orta .right-sidebar .box .center .sag .subtitle p {
+    color: #bc8664;
+  }
+  section.details .orta .right-sidebar .box .bottom {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  section.details .orta .right-sidebar .box .bottom .button {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(109, 189, 146, 0.8509803922);
+    border-radius: 10px;
+  }
+  section.details .orta .right-sidebar .box .bottom .button:hover {
+    background-color: #69c17d;
+  }
+  section.details .orta .right-sidebar .box .bottom .button span {
+    width: 100%;
+    color: white;
+  }
+  section.details .orta .right-sidebar .box .bottom input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(180, 177, 177);
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  section.details .orta .right-sidebar .box .last {
+    width: 100%;
+    margin: 10px 5px;
+  }
+  section.details .orta .right-sidebar .box .last input {
+    width: 100%;
+    padding: 65px;
+    border: 1px solid rgb(180, 177, 177);
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  section.details .orta .right-sidebar .box .last button {
+    width: 100%;
+    border: 1px solid #bc8664;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #bc8664;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  section.details .orta .right-sidebar .box .last button:hover {
+    background-color: white;
+    color: #bc8664;
+  }
+  section.details .orta .right-sidebar .box .tag {
+    width: 100%;
+    display: flex;
+    margin: 20px 6px;
+    gap: 10px;
+  }
+  section.details .orta .right-sidebar .box .tag .sol {
+    width: 50%;
+    border: 1px solid #bc8664;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  section.details .orta .right-sidebar .box .tag .sol:hover {
+    background-color: #bc8664;
+    color: white;
+  }
+  section.details .orta .right-sidebar .box .tag .sol i {
+    color: #bc8664;
+  }
+  section.details .orta .right-sidebar .box .tag .sol a {
+    color: #bc8664;
+  }
+  section.details .orta .right-sidebar .box .tag .sag {
+    width: 50%;
+    border: 1px solid #bc8664;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  section.details .orta .right-sidebar .box .tag .sag:hover {
+    background-color: #bc8664;
+    color: white;
+  }
+  section.details .orta .right-sidebar .box .tag .sag i {
+    color: #bc8664;
+  }
+  section.details .orta .right-sidebar .box .tag .sag a {
+    color: #bc8664;
+  }
+}/*# sourceMappingURL=estate-details.css.map */

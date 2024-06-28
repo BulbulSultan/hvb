@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+%standart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// burada $soz:deyer yazdiqlariniz mixin ucun default deyer teyin edir, 
+// siz gelib @include deyisen dedikde default yazdiginiz deyerlerle tetbiq olunur
+//@include deyisen($soz:yeni-deyer) dedikde ise sadece o deyer deyisir ve digerleri default qalir
+// @include deyisen($soz:yeni-deyer, $digeri:yeni-deyer) deyerek ise burda teyin etdiklerinizin hamsin deyise bilirsiz 
+@mixin deyisen($d: flex, $fd: row, $fw: wrap, $jc: center, $ai: center, $ac: center) {
+    display: $d;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    align-items: $ai;
+    align-content: $ac;
+}
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    @extend %standart;
+
+    .orta {
+        width: 90%;
+        display: flex;
+        align-items: center;
+
+
+        .logo {
+            width: 260px;
+
+            img {
+                width: 185px;
+                margin: 20px 0;
+            }
+        }
+
+        .navbar {
+            width: 50%;
+            @extend %standart;
+
+            ul {
+                display: flex;
+                gap: 10px;
+
+                li {
+                    @extend %standart;
+
+                    &:first-child a {
+                        color: #bc8664
+                    }
+
+                    a {
+                        color: black;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        .cta {
+            width: 22%;
+
+            ul {
+                @include deyisen($jc: space-between);
+
+                li {
+                    @extend %standart;
+
+                    a {
+                        font-size: 17px;
+                        color: black;
+
+                        i {
+                            color: #bc8664;
+
+                            .span {
+                                color: black;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+section.pink {
+    width: 100%;
+    background-color: #f1eaeb;
+    @extend %standart;
+
+    .orta {
+        width: 100%;
+        @extend %standart;
+        padding: 59px;
+
+        .filter-form {
+            width: 70%;
+            @include deyisen($jc: space-between);
+            border: 1px solid white;
+            border-radius: 50px;
+            background-color: white;
+
+            .input-box {
+                background-color: white;
+                position: relative;
+                margin-left: 10px;
+
+                &:last-child {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    background-color: #bc8664;
+                    margin-right: 10px;
+                    @extend %standart;
+
+
+                }
+
+                input:checked~.property-type-list {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .property-type-list {
+                    width: 100px;
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    background-color: white;
+
+                    li {
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            background-color: rgb(220, 220, 220);
+                        }
+                    }
+                }
+
+                input:checked~.sell-or-rent-list {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .sell-or-rent-list {
+                    width: 100px;
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    background-color: white;
+
+                    li {
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            background-color: rgb(220, 220, 220);
+                        }
+                    }
+                }
+
+                input:checked~.property-status {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .property-status {
+                    width: 100px;
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    background-color: white;
+
+                    li {
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            background-color: rgb(220, 220, 220);
+                        }
+                    }
+                }
+            }
+
+            .input-box {
+                background-color: white;
+                position: relative;
+
+                i {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+section.home {
+    width: 100%;
+    @extend %standart;
+
+    .orta {
+        width: 100%;
+        @include deyisen($fd: column);
+
+        .yuxari {
+            width: 60%;
+            padding: 25px;
+            display: flex;
+
+            ul {
+                gap: 41px;
+                @include deyisen($jc: space-between);
+
+                li {
+                    @extend %standart;
+
+                    a {
+                        font-size: 17px;
+                        color: black;
+
+                        span {
+                            display: flex;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .center {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .estate-card {
+                width: 50%;
+                margin-top: 30px;
+
+                .estate-header {
+                    width: 90%;
+                    position: relative;
+
+
+                    .estate-tags {
+                        width: 70%;
+                        position: absolute;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10px;
+
+                        .featured {
+                            width: 19%;
+                            margin-left: 5px;
+
+
+                            span {
+                                border: 1px solid #6dbd92d9;
+                                border-radius: 10px;
+                                padding: 5px;
+                                background-color: #6dbd92d9;
+                                color: white;
+                                @extend %standart;
+                                font-size: 12px;
+                            }
+                        }
+
+                        .tags {
+                            width: 40%;
+                            display: flex;
+                            gap: 10px;
+
+                            ul {
+                                width: 100%;
+                                @include deyisen($jc: space-between);
+
+                                li {
+                                    width: 45%;
+                                    border: 1px solid #bc8664;
+                                    border-radius: 10px;
+                                    padding: 3px;
+                                    background-color: #bc8664;
+                                    display: flex;
+
+                                    a {
+                                        color: white;
+                                        font-size: 12px;
+                                        @extend %standart;
+                                        margin-left: 15px;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
+                    .estate-image {
+                        width: 100%;
+
+
+                        img {
+                            width: 435px;
+                            border-radius: 21px;
+                        }
+                    }
+
+                    .estate-owner {
+                        width: 100%;
+
+                        img {
+                            width: 48px;
+                            border-radius: 50%;
+                            border: 3px solid white;
+                        }
+                    }
+
+                    .estate-wishlist {
+                        width: 100%;
+
+                        i {
+
+                            margin-left: 404px;
+                        }
+                    }
+                }
+
+                .estate-body {
+                    width: 100%;
+
+                    .estate-title {
+                        width: 60%;
+
+
+
+                        a {
+                            color: black;
+                            font-size: 21px;
+                            font-weight: 400;
+
+                            &:hover {
+                                color: #bc8664;
+                            }
+                        }
+                    }
+                }
+
+
+                .estate-description {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    ul {
+                        display: flex;
+                        font-size: 14px;
+                        gap: 10px;
+                        margin-top: 5px;
+
+
+                        li {
+                            color: grey;
+                        }
+                    }
+
+                }
+
+                .estate-price {
+                    width: 100%;
+                    margin-top: 10px;
+
+                    span {
+                        color: #bc8664;
+                    }
+                }
+
+            }
+
+            //     .estate-card{
+            //         width: 100%;
+
+            //         .estate-header{
+            //             width: 100%;
+
+            //             .estate-tags{
+            //                 width: 60%;
+
+            //                 .featured{
+            //                     width: 15%;
+            //                     border: 1px solid #8bcf8b85;
+            //                     border-radius: 10px;
+            //                     padding: 3px;
+            //                     background-color: #8bcf8b85;
+
+            //                    span{
+            //                     color: white;
+            //                     @extend %standart
+            //                    } 
+            //                 }
+            //                 .tags{
+            //                     width: 60%;
+
+            //                     ul{
+            //                         width: 100%;
+            //                         @include deyisen($jc:space-between);
+
+            //                         li{
+            //                             width: 17%;
+            //                             border: 1px solid #bc8664;
+            //                             border-radius: 10px;
+            //                             padding: 3px;
+            //                             background-color: #bc8664;
+            //                             display: flex;
+
+            //                             a{
+            //                                 color: white;
+            //                             }
+
+            //                         }
+            //                     }
+            //                 }
+            //             }
+
+            //         .estate-image{
+            //             width: 100%;
+
+            //             img{
+            //                 width: 343px;
+            //                 border-radius: 21px;
+            //             }
+            //         }
+
+            //         .estate-owner{
+            //             width: 100%;
+
+            //             img{
+            //                 width: 48px;
+            //                 border-radius: 50%;
+            //                 border: 3px solid white;
+            //             }
+            //         }
+
+            //     .estate-wishlis{
+            //         width: 100%;
+
+            //         i{
+            //             color: white;
+            //         }
+            //     }
+            //         }
+
+            //     .estate-body{
+            //         width: 100%;
+
+            //     .estate-title{
+            //         width: 60%;
+
+
+
+            //         a{
+            //             color: black;
+            //             font-size: 21px;
+            //             font-weight: 400;
+
+            //             &:hover{
+            //                 color: #bc8664;
+            //             }
+            //         }
+            //     }
+            //     }
+
+
+            //     .estate-description{
+            //         width: 100%;
+            //         display: flex;
+            //         flex-direction: column;
+
+            //         ul{
+            //             display: flex;
+            //             font-size: 14px;
+            //             gap: 10px;
+            //             margin-top: 5px;
+
+
+            //             li{
+            //                 color: grey;
+            //             }
+            //         }
+
+            //     }
+            //     .estate-price{
+            //         width: 100%;
+            //         margin-top: 10px;
+
+            //         span{
+            //             color: #bc8664;
+            //         }
+            //     }
+
+            // }
+        }
+    }
+}
